@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Permanent+Marker');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: ivory;
+}
+
+#title{
+    font-family: 'Kaushan Script', cursive;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 5px;
+    height:100px;
+    background-image: url(headBg.jpg);
+    padding-top:20px;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 50px;
+}
+#searchBtn{
+    height: 34px;    
+}
+#input{
+    padding-top: 5px;
+    width:300px;
+}
+.homeBtn {
+    padding-top: 5px;
+}
+a{
+    color:black;
+    font-size: 15px;
+    font-family: 'Permanent Marker',cursive;
+}
+#home>div{
+    padding: 10px;
+}
+.card{
+    background-image: url(cardBg1.jpg);
+    background-size: contain;
+    background-repeat:repeat-x;
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: bold;
+}
+.title{
+    background-color: rgba(0, 100, 0, 0.205);
+    font-size: 20px;
+}
+#coinsModal{
+    padding-top:50px;
+    background-image: url(headBg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.modal-body{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a:hover{
+    text-decoration: none;
+}

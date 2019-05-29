@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="coins.css" />
+    <link rel="stylesheet" type="text/css" href="animation.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="coins.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <h1 id="title" class="col-12">CRYPTONITE</h1>
+            <ul class="nav nav-tabs col-12">
+                <li id="homebtn" class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                <li id="livebtn"><a data-toggle="tab" href="#live">Live Reports</a></li>
+                <li id="aboutbtn"><a data-toggle="tab" href="#about">About</a></li>
+                <li id="input"><input id="searchInput" type="text" placeholder="Search Coin by Symbol Name" class="form-control"></li>
+                <li class="homeBtn"><button id="searchBtn" class="btn btn-outline-secondary">Search</button></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="home" class="fade in active row">
+        </div>
+        <div id="live" class="fade">
+        </div>
+        <div id="about" class="fade row">
+        </div>
+    </div>
+    <div class="modal fade" id="coinsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">
+                        <p>Number of coins for Live View exceeded.</p>
+                        <p>Replace one of the previous, by unchecking. Or dismiss.</p>
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
